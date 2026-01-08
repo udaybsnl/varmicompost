@@ -7,7 +7,7 @@ body {
 
 /* HEADER */
 .navbar {
-    background: #462d19;
+    background: #1b5e20;
     color: #fff;
     padding: 15px 30px;
     display: flex;
@@ -250,5 +250,219 @@ footer {
 .gallery img {
   width: 100%;
   border: 1px solid #ccc;
+}
+.scroll-gallery {
+  width: 100%;
+  overflow: hidden;
+  background: #f5f5f5;
+  padding: 15px 0;
+}
+
+.scroll-track {
+  display: flex;
+  width: calc(250px * 6);
+  animation: scroll 25s linear infinite;
+}
+
+.scroll-track img {
+  width: 250px;
+  height: 160px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.scroll-gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  padding: 15px 0;
+}
+
+/* Overlay text */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 12px 25px;
+  border-radius: 6px;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Scrolling images */
+.scroll-track {
+  display: flex;
+  width: calc(260px * 6);
+  animation: scroll 20s linear infinite; /* SPEED CONTROL */
+}
+
+/* Pause on hover */
+.scroll-gallery:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+.scroll-track img {
+  width: 260px;
+  height: 170px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 6px;
+  opacity: 0.85;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.scroll-gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  padding: 15px 0;
+}
+
+/* Overlay text */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 12px 25px;
+  border-radius: 6px;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Scrolling images */
+.scroll-track {
+  display: flex;
+  width: calc(260px * 6);
+  animation: scroll 20s linear infinite; /* SPEED CONTROL */
+}
+
+/* Pause on hover */
+.scroll-gallery:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+.scroll-track img {
+  width: 260px;
+  height: 170px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 6px;
+  opacity: 0.85;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.hero-scroll {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  padding: 20px 0;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.55);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.hero-overlay h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Inquiry Button */
+.hero-btn {
+  display: inline-block;
+  background: #2e7d32;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Flags */
+.flags {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.flags span {
+  margin: 0 8px;
+}
+
+/* Scrolling Images */
+.scroll-track {
+  display: flex;
+  animation: scroll 22s linear infinite;
+}
+
+.hero-scroll:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+.scroll-track img {
+  width: 300px;
+  height: 190px;
+  object-fit: cover;
+  margin-right: 15px;
+  opacity: 0.8;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
