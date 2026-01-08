@@ -465,4 +465,31 @@ footer {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+.brochure {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f4f8f4;
+}
+
+.brochure h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.brochure-download {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #2e7d32;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Optional smaller button in hero */
+.brochure-btn {
+  margin-left: 10px;
+  background: #1b5e20;
+}
 
