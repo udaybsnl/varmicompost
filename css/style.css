@@ -492,4 +492,17 @@ footer {
   margin-left: 10px;
   background: #1b5e20;
 }
+.about {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.about h1 {
+  color: #2e7d32;
+}
+
+.about ul li {
+  margin: 8px 0;
+}
 
