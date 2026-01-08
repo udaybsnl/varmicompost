@@ -16,25 +16,29 @@
   <a href="vermicompost.html">Vermicompost</a>
   <a href="contact.html">Contact</a>
 </nav>
+<button id="themeToggle">🌙</button>
 
   </header>
 
-<section class="about container">
-  <h1>Rural Exim</h1>
-
-  <p>
-    Rural Exim is a trusted exporter of organic vermicompost and
+<section class="about container two-col reveal">
+  <div class="text">
+    <h2>About Rural Exim</h2>
+    <p>
+      Rural Exim is a trusted exporter of organic vermicompost and
     agricultural products from India. We focus on supplying high-quality,
     eco-friendly soil nutrients to international markets.
-  </p>
-
-  <p>
-    Our vermicompost is produced using natural decomposition methods and
+    </p>
+    <p>
+       Our vermicompost is produced using natural decomposition methods and
     complies with export quality standards. We supply in bulk quantities
     with customized packaging for global buyers.
-  </p>
+    </p>
+  </div>
 
-  <h3>Why Choose Us?</h3>
+  <div class="image">
+    <img src="images/vermicompost1.jpg" alt="Vermicompost Production">
+  </div>
+ <h3>Why Choose Us?</h3>
   <ul>
     <li>✔ Export-quality vermicompost</li>
     <li>✔ Bulk supply capability</li>
@@ -43,39 +47,36 @@
     <li>✔ Reliable delivery</li>
   </ul>
 </section>
-<section class="timeline container">
+<section class="timeline container reveal">
   <h2>Our Journey</h2>
 
   <div class="timeline-item">
-    <span>2015</span>
-    <p>Started organic farming & compost production</p>
+    <span class="icon">🌱</span>
+    <p><strong>2015</strong> – Started organic compost production</p>
   </div>
 
   <div class="timeline-item">
-    <span>2018</span>
-    <p>Expanded into bulk vermicompost supply</p>
+    <span class="icon">📦</span>
+    <p><strong>2018</strong> – Bulk supply expansion</p>
   </div>
 
   <div class="timeline-item">
-    <span>2022</span>
-    <p>Entered export market</p>
-  </div>
-
-  <div class="timeline-item">
-    <span>2024</span>
-    <p>Supplying to international buyers</p>
+    <span class="icon">🌍</span>
+    <p><strong>2022</strong> – Entered export market</p>
   </div>
 </section>
-<section class="capacity container">
+
+<section class="capacity container reveal">
   <h2>Export Capacity</h2>
 
-  <ul>
-    <li>✔ Monthly Supply Capacity: <strong>200 MT</strong></li>
-    <li>✔ Packaging: 25kg / 50kg / Jumbo Bags</li>
-    <li>✔ Container Load: 20ft & 40ft</li>
-    <li>✔ Custom Private Labeling Available</li>
+  <ul class="icon-list">
+    <li>🚢 Monthly Capacity: <strong>200 MT</strong></li>
+    <li>📦 Packing: 25kg / 50kg / Jumbo</li>
+    <li>🧾 Private Labeling Available</li>
+    <li>🌍 20ft & 40ft Containers</li>
   </ul>
 </section>
+
 <section class="certifications container">
   <h2>Certifications & Compliance</h2>
 
@@ -105,6 +106,33 @@
     <strong>— Distributor, Africa</strong>
   </div>
 </section>
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      section.classList.add("active");
+    }
+  });
+});
+</script>
+<script>
+document.getElementById("themeToggle").onclick = () => {
+  document.body.classList.toggle("dark");
+};
+</script>
 
 </body>
+<a href="https://wa.me/919490024994?text=Hello%20We%20are%20interested%20in%20Vermicompost%20Export"
+   class="whatsapp-float"
+   target="_blank">
+    💬 WhatsApp
+</a>
+<footer class="footer">
+  <p>© 2026 Rural Exim | Vermicompost Exporter from India</p>
+  <p>Email: info@yourdomain.com | WhatsApp: +91 9490024994</p>
+</footer>
+
 </html>
