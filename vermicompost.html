@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Vermicompost Exporter from India | Rural Exim</title>
+  <meta charset="UTF-8">
+  <title>Vermicompost Exporter from India | Rural Exim</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Exporter and supplier of premium quality Vermicompost from India. Bulk supply for agriculture and organic farming.">
-    <meta name="keywords" content="vermicompost exporter, organic fertilizer exporter, vermicompost supplier india">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <meta name="description" content="Exporter and supplier of premium quality Vermicompost from India. Bulk supply for agriculture and organic farming.">
+  <meta name="keywords" content="vermicompost exporter, organic fertilizer exporter India, vermicompost bulk supply, organic manure export">
+  <meta name="author" content="Rural Exim">
 
-    <link rel="stylesheet" href="./css/style.css">
-<meta name="description" content="Rural Exim is an Indian exporter of vermicompost and organic agricultural products. Bulk supply for international markets.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="keywords" content="vermicompost exporter, organic fertilizer exporter India, vermicompost bulk supply, organic manure export">
-
-<meta name="author" content="Rural Exim">
+  <!-- MAIN CSS -->
+   <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <script>
 const texts = [
   "Export Quality Vermicompost",
@@ -35,16 +35,19 @@ setInterval(() => {
 
 <!-- HEADER -->
 <header class="navbar">
-    <h1>Rural Exim</h1>
-    <nav>
+    <h1>About Rural Exim</h1>
+    <nav class="navbar">
   <a href="index.html">Home</a>
   <a href="about.html">About Us</a>
-  <a href="vermicompost.html">Vermicompost</a>
+  <!--<a href="vermicompost.html">Products</a>-->
   <a href="contact.html">Contact</a>
+
+  <button id="themeToggle" class="theme-btn">🌙</button>
 </nav>
 
 
-</header>
+  </header>
+
 
 <!-- MAIN CONTENT -->
 <section class="content product-page">
@@ -138,6 +141,23 @@ setInterval(() => {
    target="_blank">
     💬 WhatsApp
 </a>
+<script>
+const texts = [
+  "Export Quality Vermicompost",
+  "Bulk Supply for International Buyers",
+  "Organic Fertilizer from India",
+  "Trusted Vermicompost Exporter"
+];
+
+let index = 0;
+setInterval(() => {
+  const el = document.getElementById("hero-text");
+  if (el) {
+    el.innerText = texts[index];
+    index = (index + 1) % texts.length;
+  }
+}, 3000);
+</script>
 
 </body>
 </html>
