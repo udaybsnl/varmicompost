@@ -45,7 +45,7 @@
 }
 
 .nav-links a.active {
-  color: #011302;
+  color: #2e7d32;
   border-bottom: 2px solid #2e7d32;
 }
 
@@ -88,7 +88,7 @@ body {
 
 /* HEADER */
 .navbar {
-    background: #1b5e20;
+    background: lab(78.24% -75.95 66.18);
     color: #ffffff;
     padding: 15px 30px;
     display: flex;
@@ -749,7 +749,7 @@ section {
   text-decoration: none;
 }
 .footer {
-  background: #2e7d32;
+  background: #635f5f;
   color: white;
   text-align: center;
   padding: 25px;
@@ -835,7 +835,7 @@ body {
   align-items: center;
   gap: 25px;
 
-  background: #2a7a04;
+  background: #635f5f;
   border-bottom: 1px solid #ddd;
   z-index: 1000;
 }
@@ -851,7 +851,7 @@ body {
 
 /* ACTIVE LINK */
 .navbar a.active {
-  color: #2e7d32;
+  color: #1ec01e;
   border-bottom: 2px solid #2e7d32;
 }
 
@@ -894,6 +894,80 @@ p, li {
   text-decoration: none;
   display: inline-block;
   margin-top: 15px;
+}
+.btn-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .btn-icon {
+  transform: translateX(6px) scale(1.1);
+}
+.btn-pdf {
+  background: linear-gradient(135deg, #1b5e20, #4caf50);
+}
+
+.btn-pdf:hover {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+}
+/* View Products gradient */
+.btn-view {
+  background: linear-gradient(135deg, #2e7d32, #2e7d32);
+}
+
+.btn-view:hover {
+  background: linear-gradient(135deg, #1e88e5, #64b5f6);
+}
+.btn:hover .btn-icon {
+  transform: translateX(6px) scale(1.1);
+}
+/* Common floating button base */
+.floating-btn {
+  position: fixed;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* View Products button */
+.view-products {
+  bottom: 90px; /* ABOVE WhatsApp */
+  background: linear-gradient(135deg, #1565c0, #42a5f5);
+}
+
+/* Hover effect */
+.view-products:hover {
+  background: linear-gradient(135deg, #1e88e5, #64b5f6);
+  transform: translateY(-2px);
+}
+@media (max-width: 600px) {
+  .floating-btn {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .view-products {
+    bottom: 80px;
+  }
+}
+.process {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background: #eef4ee;
+  font-weight: 600;
 }
 
 
