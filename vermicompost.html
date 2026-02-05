@@ -10,6 +10,7 @@
   <meta name="author" content="Rural Exim">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- MAIN CSS -->
    <link rel="stylesheet" href="css/style.css">
@@ -35,18 +36,20 @@ setInterval(() => {
 
 <!-- HEADER -->
 <header class="navbar">
-    <h1>Our Products</h1>
-    <nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <!--<a href="vermicompost.html">Products</a>-->
-  <a href="contact.html">Contact</a>
+  <div class="logo">
+    <img src="images/logo.png" alt="Rural Exim Logo">
+    <span>Rural Exim</span>
+  </div>
 
-  <button id="themeToggle" class="theme-btn">🌙</button>
-</nav>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
 
-  </header>
 
 
 <!-- MAIN CONTENT -->
@@ -132,33 +135,43 @@ setInterval(() => {
 </section>
 
 <!-- FOOTER -->
-<footer>
-    <p>© 2026 Rural Exim | India</p>
+<footer class="footer">
+  <p>© 2026 Rural Exim | Vermicompost Exporter from India</p>
+  <p>Email: info@yourdomain.com | WhatsApp: +91 9490024994</p>
 </footer>
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919490024994?text=Hello%20We%20are%20interested%20in%20Vermicompost%20Export"
-   class="whatsapp-float"
-   target="_blank">
-    💬 WhatsApp
+<a href="vermicompost.html" class="floating-btn view-products">
+  <span class="btn-icon">📦</span>
+  View Products
 </a>
 <script>
-const texts = [
-  "Export Quality Vermicompost",
-  "Bulk Supply for International Buyers",
-  "Organic Fertilizer from India",
-  "Trusted Vermicompost Exporter"
-];
-
-let index = 0;
-setInterval(() => {
-  const el = document.getElementById("hero-text");
-  if (el) {
-    el.innerText = texts[index];
-    index = (index + 1) % texts.length;
-  }
-}, 3000);
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
 </script>
 
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      section.classList.add("active");
+    }
+  });
+});
+</script>
+
+
 </body>
+<a href="https://wa.me/919490024994" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<div style="height:20px; background:rgb(252, 249, 249);"></div>
+
 </html>
+
+
 

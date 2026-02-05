@@ -193,21 +193,29 @@ footer {
 }
 .whatsapp-float {
     position: fixed;
-    bottom: 20px;
+    top: 50%;
     right: 20px;
+    transform: translateY(-50%);
     background: #25D366;
     color: #fff;
-    padding: 12px 18px;
-    border-radius: 30px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    font-size: 28px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .whatsapp-float:hover {
-    background: #1ebd5a;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
+
 .contact-form {
     max-width: 500px;
 }
@@ -575,6 +583,15 @@ footer {
 
 .brochure h2 {
   color: #2e7d32;
+  margin-bottom: 10px;
+}
+.process h2 {
+  text-align: center;
+}
+
+.process h2 {
+  color: #2e7d32;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -969,5 +986,220 @@ p, li {
   background: #eef4ee;
   font-weight: 600;
 }
+/* HEADER */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* NAV LINKS */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* HAMBURGER (HIDDEN ON DESKTOP) */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #1b5e20;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 15px;
+    margin: 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+.hero-buttons {
+  margin-top: 20px;
+}
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1b5e20;
+  position: relative;
+}
+
+/* Decorative underline */
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #4caf50;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 4px;
+}
+.section-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.values {
+  background: #f9fdf9;
+  padding: 80px 20px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.value-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.value-box h3 {
+  color: #1b5e20;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.value-box p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 12px;
+}
+.founder-quote {
+  background: #408345;
+  color: #ffffff;
+  padding: 70px 25px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.founder-quote blockquote {
+  font-size: 22px;
+  line-height: 1.6;
+  font-style: italic;
+  max-width: 900px;
+  margin: auto;
+}
+
+.founder-quote span {
+  color: #c8e6c9;
+  font-weight: 600;
+}
+
+.founder-name {
+  margin-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+  opacity: 0.9;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.impact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.impact-box {
+  background: #f1f8f4;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.impact-box h3 {
+  font-size: 26px;
+  color: #1b5e20;
+  margin-bottom: 8px;
+}
+
+.impact-box p {
+  font-size: 15px;
+  color: #444;
+}
+
+
+
 
 

@@ -5,32 +5,36 @@
   <title>About Us | Vermicompost Exporter from India</title>
   <meta name="description" content="Rural Exim is an Indian exporter of vermicompost and organic agricultural products.">
   <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
 
 <header class="navbar">
-    <h1>About Rural Exim</h1>
-    <nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="vermicompost.html">Products</a>
-  <a href="contact.html">Contact</a>
+  <div class="logo">
+    <img src="images/logo.png" alt="Rural Exim Logo">
+    <span>Rural Exim</span>
+  </div>
 
-  <button id="themeToggle" class="theme-btn">🌙</button>
-</nav>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="vermicompost.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
 
-  </header>
 
 <section class="about container two-col reveal">
   <div class="text">
-    <h2>About Rural Exim</h2>
+    <h2 class="section-title">About Rural Exim</h2>
     <p>
-      Rural Exim is a trusted exporter of organic vermicompost and
-    agricultural products from India. We focus on supplying high-quality,
-    eco-friendly soil nutrients to international markets.
+      Rural Exim is a trusted exporter of organic
+    agricultural products from India. We focus on  supplying high-quality, 
+    authentic rural treasures like organic fertilizers and exquisite handicrafts
+     to international markets.
     </p>
     <p>
        Our vermicompost is produced using natural decomposition methods and
@@ -42,19 +46,77 @@
   <div class="image">
     <img src="images/vermicompost1.jpg" alt="Vermicompost Production">
   </div>
- <h3>Why Choose Us?</h3>
-  <ul>
+</section>
+<section class="timeline container reveal">
+  <h2 class="section-title">Our Journey</h2>
+  <p>Our journey begins with a profound commitment to ruralism, celebrating the ingenuity of village artisans 
+    and farmers who sustain our planet through time-honored practices.</p>
+  <p>Founded by a dynamic team of young visionaries, we infuse fresh energy into age-old traditions, 
+    ensuring every product carries the essence of rural resilience.</p>
+  <!--<h2 class="section-title">Why Choose Us</h2>
+    <p>We started small, but our unwavering desire to <strong>serve the world</strong> drives us forward with <strong>unmatched reliability</strong>. </p>
+    <p>Rural Exim stands as a beacon for <strong>ethical export practices</strong>, prioritizing <strong>transparency and fairness</strong>  in every transaction.</p>-->
+<section class="values container reveal">
+  <h2 class="section-title">Our Purpose & Values</h2>
+
+  <div class="values-grid">
+    <div class="value-box">
+      <h3>🌍 Circular Economy & Sustainability</h3>
+      <p>
+        Our core goal revolves around fostering a <strong>circular economy</strong>,
+        where rural products create closed-loop systems that minimize waste and maximize value.
+        By promoting organic fertilizers derived from natural, farm-based sources,
+        we empower farmers to enrich soils without chemicals, directly contributing to
+        reduced carbon footprints worldwide.
+      </p>
+      <p>
+        Handicrafts, meticulously created by rural communities, embody sustainability
+        through the use of locally sourced, renewable materials that support zero-waste production.
+      </p>
+    </div>
+
+    <div class="value-box">
+      <h3>🤝 Ethical Trade & Rural Empowerment</h3>
+      <p>
+        We help rural communities thrive by providing <strong>stable market access</strong>,
+        fair wages, and skill-building opportunities that uplift entire villages.
+        Ethical Exim is in our DNA — we reject exploitative supply chains and instead
+        build partnerships rooted in transparency, respect, and long-term prosperity.
+      </p>
+    </div>
+
+    <div class="value-box">
+      <h3>🚀 Young Leadership & Global Vision</h3>
+      <p>
+        Driven by a new generation of passionate leaders, our young team blends
+        <strong>rural roots with global savvy</strong> to deliver reliable opportunities
+        for producers and buyers alike.
+      </p>
+      <p>
+        Every shipment from Rural Exim plants seeds of change — from lowering emissions
+        through organics to preserving cultural heritage through handicrafts.
+      </p>
+    </div>
+
+    <div class="value-box">
+      <h3>🌱 Invitation to Global Partners</h3>
+      <p>
+        We invite international partners, retailers, and conscious consumers to
+        collaborate with Rural Exim. Together, we can amplify rural voices,
+        drive circular progress, and build a greener, more equitable future —
+        <strong>one ethical export at a time</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+  <!--<ul></p>
     <li>✔ Export-quality vermicompost</li>
     <li>✔ Bulk supply capability</li>
     <li>✔ International packing standards</li>
     <li>✔ Competitive pricing</li>
     <li>✔ Reliable delivery</li>
-  </ul>
-</section>
-<section class="timeline container reveal">
-  <h2>Our Journey</h2>
-
-  <div class="timeline-item">
+  </ul> -->
+    <!--<div class="timeline-item">
     <span class="icon">🌱</span>
     <p><strong>2015</strong> – Started organic compost production</p>
   </div>
@@ -67,7 +129,7 @@
   <div class="timeline-item">
     <span class="icon">🌍</span>
     <p><strong>2022</strong> – Entered export market</p>
-  </div>
+  </div> -->
 </section>
 
 <section class="capacity container reveal">
@@ -128,15 +190,40 @@ document.getElementById("themeToggle").onclick = () => {
 };
 </script>
 
-</body>
-<a href="https://wa.me/919490024994?text=Hello%20We%20are%20interested%20in%20Vermicompost%20Export"
-   class="whatsapp-float"
-   target="_blank">
-    💬 WhatsApp
-</a>
 <footer class="footer">
   <p>© 2026 Rural Exim | Vermicompost Exporter from India</p>
   <p>Email: info@yourdomain.com | WhatsApp: +91 9490024994</p>
 </footer>
+<a href="vermicompost.html" class="floating-btn view-products">
+  <span class="btn-icon">📦</span>
+  View Products
+</a>
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+</script>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      section.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+</body>
+<a href="https://wa.me/919490024994" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<div style="height:10px; background:rgb(252, 249, 249);"></div>
 
 </html>
